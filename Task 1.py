@@ -1,21 +1,16 @@
-# Function to perform basic mathematical operations
-def operations(num1, num2):
-    print("\n Calculation Results:")
-    print(f" Addition: {num1} + {num2} = {num1 + num2}")
-    print(f" Subtraction: {num1} - {num2} = {num1 - num2}")
-    print(f" Multiplication: {num1} × {num2} = {num1 * num2}")
+#Taking numbers as input
+number1 = float(input("Enter digit 1: "))
+number2 = float(input("Enter digit 2: "))
 
-    # Handling division to avoid division by zero error
-    if num2 != 0:
-        print(f" Division: {num1} ÷ {num2} = {num1 / num2}")
-    else:
-        print("Division by zero is undefined!")
+#Main operation
+addition = number1 + number2
+subtraction = number1 - number2
+multiplication = number1 * number2
+division = number1 / number2
 
-# Taking input from the user.
-try:
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-
-    operations(num1, num2)
-except ValueError:
-    print("Invalid input! Please enter numeric values.")
+#Printing Results
+print("Result's:-")
+print(f"Addition: {number1} + {number2} = {addition}")
+print(f"Substraction: {number1} - {number2} = {subtraction}")
+print(f"Multiplication: {number1} * {number2} = {multiplication}")
+print(f"Division: {number1} / {number2} = {division}")
